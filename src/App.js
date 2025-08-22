@@ -21,7 +21,7 @@ function App() {
   // Function to fetch leaderboard data from backend API
   const fetchLeaderboard = async () => {
     try {
-      const res = await fetch(`${BACKEND_URL}/api/submit`);
+      const res = await fetch(`${BACKEND_URL}/api/leaderboard`);
       const data = await res.json();
       setLeaderboard(data);
     } catch (err) {
